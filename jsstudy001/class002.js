@@ -1,0 +1,11 @@
+var firstName = "Jonas";
+var job = "teacher";
+var birthYear = 1991;
+var year = 2037;
+var jonas = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+console.log(jonas);
+var jonasNew = "I'm ".concat(firstName, ", a ").concat(year - birthYear, " year old ").concat(job, "!");
+console.log(jonasNew);
+console.log("Just a regular string...");
+console.log("String with \n\nmultiple \nlines");
+console.log("String with\nmultiple\nlines");
