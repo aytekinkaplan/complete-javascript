@@ -20,3 +20,5 @@ console.log(calcAge1(1988), calcAge2(1988, 2024));
 var calcAge3 = function (birthYear) { return 2099 - birthYear; };
 var calcAge4 = function (birthYear, currentYear) { return currentYear - birthYear; };
 console.log(calcAge3(1988), calcAge4(1988, 2024));
+var yearUntilRetirement = function (birthYear, firstName) { var currentYear = new Date().getFullYear(); var retirement = 65 - (currentYear - birthYear); return "".concat(firstName, " retires in ").concat(retirement, " years."); };
+yearUntilRetirement(1988, 'Jonas'); //Jonas retires in 58 years
