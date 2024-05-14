@@ -30,3 +30,6 @@ const calcAge3 = (birthYear: number) => 2099 - birthYear;
 const calcAge4 = (birthYear: number, currentYear: number) => currentYear - birthYear;
 
 console.log(calcAge3(1988), calcAge4(1988, 2024));
+
+
+const yearUntilRetirement = (birthYear: number, firstName: string) => { const currentYear = new Date().getFullYear(); const retirement = 65 - (currentYear - birthYear); return `${firstName} retires in ${retirement} years.` }; yearUntilRetirement(1988, 'Jonas'); //Jonas retires in 58 years
