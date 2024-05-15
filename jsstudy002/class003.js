@@ -11,3 +11,26 @@ function randomNum(max) {
     return Math.floor(Math.random() * (max + 1));
 }
 console.log(randomNum(10));
+/*
+This method calculates the number of digits in a given string.
+Upon creation, the method takes a string parameter. It then
+iterates through each character in the string, checking whether
+it is a digit or not. If any character is determined to be a digit,
+the digit counter is incremented. As a result, the method returns
+the count of digits in the input string.
+*/
+/*
+This method calculates the number of digits in a given string. Upon creation, the method takes a string parameter. It then iterates through each character in the string, checking whether it is a digit or not. If any character is determined to be a digit, the digit counter is incremented. As a result, the method returns the count of digits in the input string.
+*/
+var countDigits = function (str) {
+    var digitCount = 0;
+    for (var i = 0; i < str.length; i++) {
+        if (!isNaN(parseInt(str[i]))) {
+            digitCount++;
+        }
+    }
+    return digitCount;
+};
+// Example usage:
+var exampleString = "Hello123World456";
+console.log(countDigits(exampleString)); // Output: 6
