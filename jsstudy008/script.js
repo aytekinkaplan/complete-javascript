@@ -1,9 +1,15 @@
-const myHeading = document.querySelector("h1");
+// Calculating BMI
 
-const words = ["Hello", "World", "My", "Name", "is", "Aytekin", "Kaplan"];
+const BMI = (mass, height) => {
+  return mass / (height * height);
+};
 
-words.forEach((word, index) => {
-  setTimeout(() => {
-    myHeading.textContent = word;
-  }, index * 3000); // Her kelime için gecikme süresi artırılıyor
-});
+const markBMI = BMI(78, 1.69);
+const johnBMI = BMI(92, 1.95);
+const markHigherBMI = markBMI > johnBMI;
+
+if (markHigherBMI) {
+  console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
+} else {
+  console.log(`John's BMI (${markBMI}) is higher than Mark's (${johnBMI})!`);
+}
