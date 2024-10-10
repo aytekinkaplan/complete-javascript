@@ -1,17 +1,10 @@
-// There are two gymnastics teams, Dolphins and Koalas. They compete against each
-// other 3 times. The winner with the highest average score wins a trophy!
-
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins win the trophy 🏆`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Koalas win the trophy 🏆`);
-  } else {
-    console.log(`No team wins the trophy 😭`);
-  }
-};
-checkWinner(scoreDolphins, scoreKoalas);
-checkWinner(576, 111);
+// Coding Challenge #2
+// Use the BMI example from Challenge #1, and the code you already wrote, and
+// improve it.
+// Your tasks:
+// 1. Print a nice output to the console, saying who has the higher BMI. The message
+// is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+// BMI (28.3) is higher than John's (23.9)!"
+// Hint: Use an if/else statement �
+// GOOD LUCK �
