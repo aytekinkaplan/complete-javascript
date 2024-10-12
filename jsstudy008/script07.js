@@ -1,5 +1,3 @@
-let hasDriversLicense = false;
-const passTest = true;
-
-if (passTest) hasDriversLicense = true;
-if (hasDriversLicense) console.log("I can drive :D");
+let hasACar = true;
+const car = hasACar ? "Car" : "Bike";
+console.log(car);
