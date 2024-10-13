@@ -7,7 +7,7 @@ Certainly! Here’s a well-structured `README.md` for your project in English, f
 
 "Guess My Number" is an interactive number guessing game built with **HTML**, **CSS**, and **JavaScript**. Players can choose between two difficulty levels and guess a number within the specified range. The game provides feedback after each guess, guiding the player towards the correct number.
 
-![Project Screenshot](./screenshot.png)
+![Project Screenshot](./screenshots/screenshot.png)
 
 ## Features 🚀
 
@@ -91,7 +91,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Created with ❤️ by [Your Name](https://github.com/your-username)
+Created with ❤️ by [Your Name](https://github.com/aytekinkaplan)
 
 ```
 
@@ -104,10 +104,4 @@ Created with ❤️ by [Your Name](https://github.com/your-username)
 6. **Screenshots Section**: Displays screenshots of different stages of the game (start screen, gameplay, end screen).
 7. **Contribution Guidelines**: Instructions on how others can contribute to the project.
 8. **License Information**: States the license under which the project is distributed.
-
-### Additional Information:
-- **Images**: Ensure you upload the relevant screenshots (e.g., `start-screen.png`, `game-screen.png`, `end-screen.png`) to the `screenshots/` folder in your project directory.
-- **MIT License**: If you're using the MIT License, include a `LICENSE` file in the root of your repository.
-
-This README provides a comprehensive overview of your project, making it easy for others to understand, install, and potentially contribute to it. If you need further adjustments or details, feel free to ask!
 ```
