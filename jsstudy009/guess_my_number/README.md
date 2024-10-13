@@ -1,14 +1,12 @@
-Certainly! Here’s a well-structured `README.md` for your project in English, following a professional format.
-
-### README.md
-
-````markdown
+```markdown
 # Guess My Number Game 🎲
 
 "Guess My Number" is an interactive number guessing game built with **HTML**, **CSS**, and **JavaScript**. Players can choose between two difficulty levels and guess a number within the specified range. The game provides feedback after each guess, guiding the player towards the correct number.
+```
 
 ![Project Screenshot](./screenshots/screenshot.png)
 
+````markdown
 ## Features 🚀
 
 - **Two difficulty levels**: Easy (1-100) and Hard (1-500)
