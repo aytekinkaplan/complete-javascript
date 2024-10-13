@@ -1,59 +1,120 @@
-/* Genel Sayfa Stili */
+/* Genel Sayfa Ayarları */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
   color: #333;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
 }
 
+#game-container {
+  width: 350px;
+}
+
+/* Ekran Düzenleri */
+.screen {
+  display: none;
+  text-align: center;
+}
+
+.screen.active {
+  display: block;
+}
+
 h1 {
-  font-size: 3rem;
-  margin-bottom: 5px;
-  color: #333;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #2a70bfa3;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  text-align: center;
 }
 
 p {
   font-size: 1.2rem;
   margin-bottom: 30px;
   color: #333;
-  text-align: center;
 }
 
-/* Oyun Alanı */
-#game-area {
-  background-color: #fff;
-  padding: 30px;
+/* Kart Yapısı */
+#game-screen,
+#start-screen,
+#end-screen {
+  background-color: #ffffff;
+  padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  width: 400px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#game-area:hover {
-  transform: scale(1.03);
+#game-screen:hover,
+#start-screen:hover,
+#end-screen:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
 }
 
-label {
-  font-size: 1rem;
-  color: #555;
-  display: block;
-  margin-bottom: 10px;
+/* Butonlar */
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
 }
 
+button:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.level-easy,
+.level-hard {
+  background-color: #ff6b6b;
+  color: #fff;
+  width: 100%;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.level-easy:hover,
+.level-hard:hover {
+  background-color: #ff5252;
+}
+
+.guess-btn {
+  background-color: #6c5ce7;
+  color: #fff;
+  width: 100%;
+}
+
+.guess-btn:hover {
+  background-color: #7f74e8;
+}
+
+.restart-btn {
+  background-color: #74b9ff;
+  color: #fff;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.restart-btn:hover {
+  background-color: #0984e3;
+}
+
+/* Girdi Kutusu */
 input[type="number"] {
-  width: 80%;
-  padding: 12px;
+  width: 100%;
+  padding: 15px;
   margin: 15px 0;
-  border: 2px solid #74ebd5;
+  border: 2px solid #6c5ce7;
   border-radius: 25px;
   background-color: #f0f0f0;
   color: #333;
@@ -64,48 +125,7 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-  border-color: #acb6e5;
-}
-
-button {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  outline: none;
-}
-
-button:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* Seviye Düğmeleri */
-.level-easy,
-.level-hard {
-  background-color: #ff6f61;
-  color: #fff;
-  margin: 5px;
-  width: 120px;
-  transition: background-color 0.3s ease;
-}
-
-.level-easy:hover,
-.level-hard:hover {
-  background-color: #ff8574;
-}
-
-/* Tahmin Düğmesi */
-.guess-btn {
-  background-color: #6c5ce7;
-  color: #fff;
-  margin-top: 20px;
-  width: 180px;
-}
-
-.guess-btn:hover {
-  background-color: #7f74e8;
+  border-color: #7f74e8;
 }
 
 /* Mesaj Alanı */
@@ -114,20 +134,22 @@ button:hover {
   font-weight: bold;
   margin-top: 15px;
   color: #333;
+  text-align: center;
   min-height: 40px;
 }
 
-/* Doğru Tahmin Rengi */
-.correct {
-  background-color: #60b347;
-  color: white;
+/* Deneme Bilgileri */
+.attempts {
+  font-size: 1rem;
+  color: #2d3436;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Responsive Tasarım */
 @media (max-width: 768px) {
-  #game-area {
+  #game-container {
     width: 90%;
-    padding: 20px;
   }
 
   h1 {
@@ -136,6 +158,6 @@ button:hover {
 
   input[type="number"],
   button {
-    width: 90%;
+    width: 100%;
   }
 }
