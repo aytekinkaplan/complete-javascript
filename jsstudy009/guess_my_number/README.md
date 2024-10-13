@@ -92,7 +92,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Check out the live version of the game here: [Guess My Number Live](https://think-a-number.netlify.app/)
 
 Created with ❤️ by [Aytekin Kaplan](https://github.com/aytekinkaplan)
-
-```
-
-```
