@@ -91,7 +91,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Created with ❤️ by [Your Name](https://github.com/aytekinkaplan)
+Created with ❤️ by [Aytekin Kaplan](https://github.com/aytekinkaplan)
 
 ```
 
