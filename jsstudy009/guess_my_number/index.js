@@ -1,3 +1,4 @@
+"use strict";
 // Global değişkenler
 let randomNumber;
 let maxNumber = 100;
