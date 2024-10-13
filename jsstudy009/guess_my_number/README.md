@@ -95,19 +95,4 @@ Created with ❤️ by [Aytekin Kaplan](https://github.com/aytekinkaplan)
 
 ```
 
-### Changes and Key Details:
-1. **Project Links**:
-   - The live version of the project is linked via Netlify: [Guess My Number Live](https://think-a-number.netlify.app/)
-   - GitHub repository is correctly linked with the `git clone` command.
-
-2. **Screenshot Placeholder**:
-   - Replace the placeholder image (`./screenshots/screenshot.png`) with actual screenshots of your game by saving images in a `screenshots/` folder in your project directory.
-
-3. **Usage and Installation Instructions**:
-   - The installation section guides users through cloning the repository and running the project locally.
-
-4. **License**:
-   - An MIT License is used. If you haven't already, add a `LICENSE` file in the root of your repository.
-
-With this `README.md`, your project will be well-documented and professional. This will help other developers or users easily understand how to use or contribute to your project! Let me know if you need further adjustments!
 ```
