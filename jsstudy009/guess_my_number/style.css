@@ -1,0 +1,141 @@
+/* Genel Sayfa Stili */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  color: #333;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+/* Oyun Alanı */
+#game-area {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  transition: transform 0.3s ease;
+}
+
+#game-area:hover {
+  transform: scale(1.03);
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 80%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 2px solid #74ebd5;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #acb6e5;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+button:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Seviye Düğmeleri */
+.level-easy,
+.level-hard {
+  background-color: #ff6f61;
+  color: #fff;
+  margin: 5px;
+  width: 120px;
+  transition: background-color 0.3s ease;
+}
+
+.level-easy:hover,
+.level-hard:hover {
+  background-color: #ff8574;
+}
+
+/* Tahmin Düğmesi */
+.guess-btn {
+  background-color: #6c5ce7;
+  color: #fff;
+  margin-top: 20px;
+  width: 180px;
+}
+
+.guess-btn:hover {
+  background-color: #7f74e8;
+}
+
+/* Mesaj Alanı */
+.message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+  min-height: 40px;
+}
+
+/* Doğru Tahmin Rengi */
+.correct {
+  background-color: #60b347;
+  color: white;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  #game-area {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  input[type="number"],
+  button {
+    width: 90%;
+  }
+}

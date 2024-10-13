@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess My Number</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS dosyasını dahil et -->
   </head>
+
   <body>
     <h1>Guess My Number</h1>
-    <p>Guess a number between 1 and 100</p>
+    <p>
+      Guess a number between 1 and 100 (or more depending on the difficulty!)
+    </p>
     <div id="game-area">
+      <!-- Difficulty level buttons -->
+      <button class="level-easy">Easy</button>
+      <button class="level-hard">Hard</button>
+
+      <!-- Input for user's guess -->
+      <label for="guess-input">Enter your guess:</label>
       <input
         placeholder="Enter your guess"
         type="number"
@@ -17,7 +28,11 @@
         class="guess-input"
         required
       />
+
+      <!-- Guess button -->
       <button class="guess-btn">Guess</button>
+
+      <!-- Message area -->
       <p class="message"></p>
     </div>
 
