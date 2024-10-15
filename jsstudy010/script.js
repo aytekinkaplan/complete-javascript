@@ -1,14 +1,22 @@
-const container = document.querySelector(".container");
+const bigContainer = document.querySelector(".big-container");
+const containers = document.querySelectorAll(".container"); // Tüm container'ları seç
 
-// container flex ayarı
-container.style.display = "flex";
-container.style.justifyContent = "space-around"; // Öğeler arasında boşluk oluşturur (isteğe bağlı)
-container.style.alignItems = "center"; // Yatayda ortalar (isteğe bağlı)
+// .big-container grid ayarı
+bigContainer.style.display = "grid";
+bigContainer.style.gridTemplateColumns = "repeat(1, 1fr)";
+bigContainer.style.gridTemplateRows = "repeat(2, auto)"; // Her iki container için yer bırakır
+bigContainer.style.gridGap = "20px";
 
-// Tüm .rounded-edge öğelerini seç
+// Her bir .container için flex ayarları yap
+containers.forEach((container) => {
+  container.style.display = "flex";
+  container.style.justifyContent = "space-around"; // Öğeler arasında boşluk oluşturur (isteğe bağlı)
+  container.style.alignItems = "center"; // Yatayda ortalar (isteğe bağlı)
+});
+
+// Tüm .rounded-edge öğelerini seç ve stil uygula
 const elements = document.querySelectorAll(".rounded-edge");
 
-// Döngü ile her bir öğeye stil uygula
 elements.forEach((element) => {
   element.style.width = "500px";
   element.style.height = "900px";
