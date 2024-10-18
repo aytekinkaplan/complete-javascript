@@ -4,18 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Microblog Post</title>
-    <style>
-      .container {
-        margin-top: 20px;
-      }
-      .image-area img {
-        max-width: 100%;
-        height: auto;
-      }
-      .post-form {
-        margin-bottom: 20px;
-      }
-    </style>
+    <!-- Harici CSS dosyası -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="root">
@@ -24,17 +14,14 @@
           Heading:
           <input type="text" id="post-heading" placeholder="Enter heading" />
         </label>
-        <br />
         <label>
           Text:
           <textarea id="post-text" placeholder="Enter short text"></textarea>
         </label>
-        <br />
         <label>
           Date:
           <input type="date" id="post-date" />
         </label>
-        <br />
         <button type="button" id="submit-post">Create Post</button>
       </form>
     </div>

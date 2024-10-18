@@ -1,0 +1,67 @@
+/* Genel stiller */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-area img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.hash-tags {
+  color: #777;
+  margin: 10px 0;
+}
+
+.heading-area h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.short-text-area {
+  margin-bottom: 10px;
+}
+
+.date-area p {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Form stili */
+.post-form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-form button:hover {
+  background-color: #0056b3;
+}
