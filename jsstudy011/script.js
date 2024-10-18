@@ -2,20 +2,16 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const body = document.querySelector("body");
+  const button = document.querySelector("button");
 
-  // Eğer body bulunamazsa, kod çalışmaz. Bu kontrol faydalı olabilir.
-  if (body) {
-    const color = () => {
-      const red = Math.floor(Math.random() * 256 + 1);
-      const green = Math.floor(Math.random() * 256 + 1);
-      const blue = Math.floor(Math.random() * 256 + 1);
-      return `rgb(${red}, ${green}, ${blue})`;
-    };
+  button.addEventListener("click", () => {
+    // 16777215 (FFFFFF hexadecimal) sayısına kadar rastgele bir sayı üret
+    let randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
-    const changeColor = () => {
-      body.style.backgroundColor = color();
-    };
+    // Eğer üretilen renk 6 haneli değilse, başına sıfır ekleyerek 6 haneye tamamla
+    randomColor = randomColor.padStart(6, "0");
 
-    body.addEventListener("click", changeColor);
-  }
+    // Arka plan rengini ayarla
+    body.style.backgroundColor = `#${randomColor}`;
+  });
 });
